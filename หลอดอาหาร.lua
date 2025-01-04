@@ -96,13 +96,13 @@ local Toggle = Tabs.Main:AddToggle("ชื่อ", {
                             if v.Name == "ProximityPrompt" then
                                 if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
                                     LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
-                                    wait(0.5)
+                                    wait(0.3)
                                     fireproximityprompt(v)
                                 end
                             end
                         end
                     end
-                    wait(1) 
+                    wait() 
                 end
             else
                 warn("ไม่พบ SandFolder ใน workspace")
