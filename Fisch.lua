@@ -5,8 +5,8 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local Window = Fluent:CreateWindow({
 	Title = "PNP_HUB",
 	SubTitle = "https://discord.gg/gMdaGtSHGW",
-	TabWidth = 160,
-	Size = UDim2.fromOffset(480, 380),
+	TabWidth = 100,
+	Size = UDim2.fromOffset(400, 300),
 	Acrylic = false, 
 	Theme = "dark",
 	MinimizeKey = Enum.KeyCode.LeftControl
@@ -139,7 +139,7 @@ ImageButton.MouseButton1Click:Connect(function()
     VirtualInputManager:SendKeyEvent(false,"LeftControl",false,game)
 end)
 
-UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = ImageButton
 
 	UICorner_2.CornerRadius = UDim.new(0, 10)
